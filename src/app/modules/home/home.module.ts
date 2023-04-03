@@ -20,7 +20,7 @@ import { SharedModule } from '../shared/shared.module';
     AboutComponent,
     ProjectsComponent,
     ResourcesComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     CommonModule,

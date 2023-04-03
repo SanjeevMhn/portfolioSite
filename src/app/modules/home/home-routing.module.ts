@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from '../shared/page-not-found/page-not-found.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
@@ -27,7 +28,8 @@ const routes: Routes = [
       { path: '', component: ContactComponent }
     ]
   },
-  { path: 'contact', redirectTo: 'home/contact', pathMatch: 'full' }
+  { path: 'contact', redirectTo: 'home/contact', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 @NgModule({

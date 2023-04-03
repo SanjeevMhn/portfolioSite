@@ -13,7 +13,7 @@ import { AccordianComponent } from './accordian/accordian.component';
     NavbarComponent,
     FooterComponent,
     CardComponent,
-    AccordianComponent
+    AccordianComponent,
   ],
   imports: [
     CommonModule,
@@ -23,7 +23,7 @@ import { AccordianComponent } from './accordian/accordian.component';
     NavbarComponent,
     FooterComponent,
     CardComponent,
-    AccordianComponent
+    AccordianComponent,
   ]
 })
 export class SharedModule { }

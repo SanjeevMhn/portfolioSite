@@ -14,10 +14,11 @@ const routes: Routes = [
     path: 'home',
     component: LayoutComponent,
     children: [
-      { path: '', component: MainComponent },
+      { path: 'main', component: MainComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'resources', component: ResourcesComponent },
-      { path: 'about', component: AboutComponent }
+      { path: 'about', component: AboutComponent },
+      { path: '', redirectTo: 'main', pathMatch: 'full' }
     ]
   },
   { path: '', redirectTo: 'home', pathMatch: 'full' },

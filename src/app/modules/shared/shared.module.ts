@@ -6,6 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { AccordianComponent } from './accordian/accordian.component';
+import { MatIconModule } from '@angular/material/icon'
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { AccordianComponent } from './accordian/accordian.component';
   ],
   imports: [
     CommonModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    MatIconModule,
   ],
   exports: [
     NavbarComponent,

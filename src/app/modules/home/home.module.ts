@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { LayoutComponent } from './shared/layout/layout.component';
-import { LayoutContactComponent } from './shared/layout-contact/layout-contact.component';
 import { MainComponent } from './main/main.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
@@ -16,7 +15,6 @@ import { MatIconModule } from '@angular/material/icon'
 @NgModule({
   declarations: [
     LayoutComponent,
-    LayoutContactComponent,
     MainComponent,
     AboutComponent,
     ProjectsComponent,

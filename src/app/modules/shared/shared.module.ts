@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CardComponent } from './card/card.component';
 import { AccordianComponent } from './accordian/accordian.component';
 import { MatIconModule } from '@angular/material/icon'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -20,12 +21,14 @@ import { MatIconModule } from '@angular/material/icon'
     CommonModule,
     SharedRoutingModule,
     MatIconModule,
+    FontAwesomeModule,
   ],
   exports: [
     NavbarComponent,
     FooterComponent,
     CardComponent,
     AccordianComponent,
+    FontAwesomeModule,
   ]
 })
 export class SharedModule { }

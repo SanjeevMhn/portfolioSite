@@ -1,1 +1,48 @@
-<p>about works!</p>
+<section class="about-section h-full py-12 overflow-y-auto">
+    <article class="about-text w-[75%] mb-6">
+        <p class="text-2xl mb-3">
+            I am a Frontend Developer/CSS Designer. I like to create beautiful UI's throught the use of various design
+            pattern and frameworks.
+        </p>
+        <p class="text-2xl mb-3">
+            I specialize in creating captivating, pixel-perfect user interfaces that are responsive. I like the mobile
+            first approach of designing a UIs but can adapt to other approaches as well. I believe in prototyping before
+            going all in on a project and I have developed methods and collected tools to allow that. I also believing
+            in learning old ways of doing things while also learning new tools to be up to date.
+        </p>
+        <p class="text-2xl mb-3">
+            When I'm not working I enjoy engaging in physical activities such as football, cricket, basketball, running,
+            working out.
+        </p>
+        <div class="tools-list-content">
+            <p class="text-2xl mb-3">Here, are some of technologies and tools I've been working with recently.</p>
+            <ul class="techtools-list flex flex-wrap max-w-[500px] list-disc pl-[22px]">
+                <li class="list-item flex-[0_0_calc(100%/2)] p-[12px_20px_12px_0] text-2xl"
+                    *ngFor="let item of techtools">{{item}}</li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="job-experiences-container">
+        <h2 class="title-text text-3xl mb-4">Experiences</h2>
+        <ul class="job-experiences-list">
+            <li class="list-item mb-4" *ngFor="let item of experiencesList">
+                <details>
+                    <summary class="text-2xl font-medium">
+                        {{item.title}}&nbsp;at&nbsp;{{item.company}}
+                        <h6 class="date text-base font-normal pl-[30px]">{{item.date}}</h6>
+                    </summary>
+                    <ul class="task-list list-disc pl-[65px]">
+                        <li class="list-item" *ngFor="let task of item.taskAssigned">
+                            <h4 class=" job-tasks text-lg">
+                                {{task}}
+                            </h4>
+                        </li>
+                    </ul>
+
+                </details>
+            </li>
+        </ul>
+    </article>
+
+</section>

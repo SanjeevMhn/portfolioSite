@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-interface Experience{
+interface Experience {
   title: string,
   company: string,
   date: string,
   taskAssigned: string[],
-  tools: string
+  tools: string[],
 }
 
 @Component({
@@ -17,10 +17,13 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
+  profileImg = '/assets/images/profile.JPG';
   techtools: string[] = [
     "Angular",
-    "Angular Material", 
-    "TailwindCss",
+    "Angular Material",
+    "React",
+    "Styled Components",
+    "TailwindCSS",
     "Bootstrap",
     "Jquery",
     "Javascript",
@@ -30,17 +33,16 @@ export class AboutComponent implements OnInit {
     "Git & Github"
   ];
 
-  experiencesList:Experience[] = [
+  experiencesList: Experience[] = [
     {
-      title: "Graphics Designer",
+      title: "CSS Designer/Frontend Developer",
       company: "Miracle Interface",
-      date: "November 2018 - May 2020",
+      date: "December 2021 - Present",
       taskAssigned: [
-        "Convert rough draft designs into digital designs for printing or digital use",
-        "Update or create new templates of reoccuring designs",
-        "Enhance images to be used in webpages",
+        "Work with fullstack developers, with framework such as Laravel and Angular and help maintain app design, responsivness, accessibility and overall flow.",
+        "Update exisiting application design",
       ],
-      tools: "Adobe Illustrator, Adobe Photoshop"
+      tools: ["SCSS", "Bootstrap", "Gulp", "Javascript", "Jquery", "Angular Matrial", "Angular", "Laravel"]
     },
     {
       title: "Jr CSS Designer",
@@ -50,17 +52,21 @@ export class AboutComponent implements OnInit {
         "Convert figma or Adobe XD designs into HTML,CSS,Javascript code for rapid prototyping",
         "Add or update stylesheets in existing or new projects",
       ],
-      tools: "SCSS,Bootstrap,Gulp,Javascript,Jquery,Angular Matrial"
+      tools: ["SCSS", "Bootstrap", "Gulp", "Javascript", "Jquery", "Angular Matrial"],
     },
+
     {
-      title: "CSS Designer",
+      title: "Graphics Designer",
       company: "Miracle Interface",
-      date: "December 2021 - Present",
+      date: "November 2018 - May 2020",
       taskAssigned: [
-        "Work with fullstack developers, with framework such as Laravel and Angular and help maintain app design, responsivness, accessibility and overall flow.",
+        "Convert rough draft designs into digital designs for printing or digital use",
+        "Update or create new templates of reoccuring designs",
+        "Enhance images to be used in webpages",
       ],
-      tools: "SCSS,Bootstrap,Gulp,Javascript,Jquery,Angular Matrial"
-    }
+      tools: ["Adobe Illustrator", "Adobe Photoshop"],
+    },
+
   ]
 
 

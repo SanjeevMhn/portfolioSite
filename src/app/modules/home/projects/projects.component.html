@@ -1,1 +1,10 @@
-<p>projects works!</p>
+<section class="projects-section h-full py-12 overflow-y-auto no-scrollbars">
+    <h2 class="text-2xl font-medium">
+        My projects
+    </h2>
+    <ul class="project-list">
+        <li class="project-list-item" *ngFor="let item of [0,1,2,3,4,5,6,7,8,9]">
+            <app-card></app-card>
+        </li>
+    </ul>
+</section>

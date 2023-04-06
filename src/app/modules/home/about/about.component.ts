@@ -40,7 +40,10 @@ export class AboutComponent implements OnInit {
       date: "December 2021 - Present",
       taskAssigned: [
         "Work with fullstack developers, with framework such as Laravel and Angular and help maintain app design, responsivness, accessibility and overall flow.",
-        "Update exisiting application design",
+        "Update exisiting application design if deprecated.",
+        "Solve UI design and accessibily problems in multiple devices and browsers.",
+        "Test out potential libraries before implementing in a project",
+        "Take part in design decision making with other designers and developers",
       ],
       tools: ["SCSS", "Bootstrap", "Gulp", "Javascript", "Jquery", "Angular Matrial", "Angular", "Laravel"]
     },

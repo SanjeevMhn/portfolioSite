@@ -31,11 +31,3 @@
     }
 }
 
-.about-section{
-    &::-webkit-scrollbar{
-        // scrollbar-width: 0;
-        display: none;
-    }
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}

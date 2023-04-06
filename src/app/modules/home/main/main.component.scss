@@ -1,14 +1,15 @@
-.social-media-list{
+.social-media-list {
     display: flex;
 
-    .list-item{
-        &:not(:last-child){
-            .list-link{
+    .list-item {
+        &:not(:last-child) {
+            .list-link {
                 margin-right: 5px;
             }
         }
     }
-    .list-link{
+
+    .list-link {
         height: 40px;
         width: 40px;
         border-radius: 50%;
@@ -16,12 +17,21 @@
         align-items: center;
         justify-content: center;
         font-size: 24px;
-        &:hover{
-            background-color: #000;
+
+        &:hover {
+            // background-color: #000;
+            border: 2px solid #73e3e9;
             color: #fff;
         }
-        fa-icon{
+
+        fa-icon {
             line-height: 0;
         }
     }
+}
+
+.get-in-touch {
+    // background: $gradient;
+    border: 2px solid #73e3e9;
+    color: #fff;
 }

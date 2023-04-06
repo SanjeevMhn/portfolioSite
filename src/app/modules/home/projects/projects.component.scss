@@ -1,0 +1,41 @@
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+    .project-list-item{
+        flex: 0 0 calc(100%/4);
+        flex-flow: wrap;
+    }
+}
+
+@media screen and (max-width: 1024px ){
+    .project-list{
+        display: flex;
+        flex-wrap: wrap;
+        .project-list-item{
+            flex: 0 0 calc(100%/3);
+            flex-flow: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 768px ){
+    .project-list{
+        display: flex;
+        flex-wrap: wrap;
+        .project-list-item{
+            flex: 0 0 calc(100%/2);
+            flex-flow: wrap;
+        }
+    }
+}
+
+@media screen and (max-width: 640px ){
+    .project-list{
+        display: flex;
+        flex-wrap: wrap;
+        .project-list-item{
+            flex: 1 1 calc(100%);
+            flex-flow: wrap;
+        }
+    }
+}

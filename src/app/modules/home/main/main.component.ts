@@ -9,7 +9,7 @@ import { faGithub, faLinkedin, faInstagram, faFacebookMessenger  } from '@fortaw
 export class MainComponent implements OnInit {
 
   constructor() { }
-  profileImg = '/assets/images/profile.JPG';
+  // profileImg = '/assets/images/profile.JPG';
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faInstagram = faInstagram;

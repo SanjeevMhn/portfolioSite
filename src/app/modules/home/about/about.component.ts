@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
-  profileImg = '/assets/images/profile.JPG';
+  profileImg = './assets/images/profile.JPG';
   techtools: string[] = [
     "Angular",
     "Angular Material",
